@@ -1,0 +1,32 @@
+{
+  "name": "kkpc_eulji",
+  "version": "1.0.0",
+  "description": "**ThemeWagon** is a great source for downloading free HTML templates built with the latest technology.",
+  "main": "app.js",
+  "engines": {
+    "node": "12.16.2"
+  },
+  "scripts": {
+    "start" : "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyunbum-k/KKPC_EULJI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyunbum-k/KKPC_EULJI/issues"
+  },
+  "homepage": "https://github.com/hyunbum-k/KKPC_EULJI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.0",
+    "mssql": "^6.2.0",
+    "nodejs": "0.0.0",
+    "tedious": "^8.2.0"
+  },
+  "devDependencies": {}
+}

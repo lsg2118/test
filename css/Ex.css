@@ -1,0 +1,17 @@
+.box-place
+{	
+	color : black;	
+	font-size : 15px;
+	font-weight: bold;
+ 	text-align: center;
+	line-height: 20px;
+	background: white;
+
+	padding-left: 27px;
+	padding-right : 27px;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+
+	margin: 10px;
+	border-radius: 50px;
+}

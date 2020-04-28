@@ -513,7 +513,7 @@
                 var obj = {"category" : div_id};
                 $.ajax({
                     type : 'post',
-                    url : 'https://euljiro.herokuapp.com/category',
+                    url : 'https://lsg2116.herokuapp.com/category',
                     data : obj,
                     success : function(data){
                         $(location).attr('href',"/listing.html");
@@ -537,7 +537,7 @@
             var obj = {"name" : $("#restaurant_search").val()} 
             $.ajax({
                 type : 'post',
-                url : 'https://euljiro.herokuapp.com/index',
+                url : 'https://lsg2116.herokuapp.com/index',
                 data : obj,
                 success : function(data){
                     if(data.recordset.length>0){

@@ -135,7 +135,7 @@
                             obj = {"sort" : select_sort};
                             $.ajax({
                                 type : 'post',
-                                url : 'http://localhost:3000/users',
+                                url : 'http://findeulji.herokuapp.com/users',
                                 data : obj,
                                 success : async function(data){
                                     initDiv();
@@ -159,7 +159,7 @@
 
                 $.ajax({
                     type : 'post',
-                    url : 'http://localhost:3000/users',
+                    url : 'http://findeulji.herokuapp.com/users',
                     data : obj,
                     success : async function(data){
                         createDiv(data.recordset);
@@ -313,7 +313,7 @@
                         var obj = {"name" : storeName[div_id[5]]};
                         $.ajax({
                             type : 'post',
-                            url : 'http://localhost:3000/review_update',
+                            url : 'http://findeulji.herokuapp.com/review_update',
                             data : obj,
                             success : function(data){
                                 
@@ -324,7 +324,7 @@
                         });
                         $.ajax({
                             type : 'post',
-                            url : 'http://localhost:3000/review_get',
+                            url : 'http://findeulji.herokuapp.com/review_get',
                             data : obj,
                             success : function(data){
                                 review_num = data.recordset[0].review;

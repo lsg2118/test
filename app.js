@@ -5,6 +5,9 @@ var sql = require("mssql");
 var app = express();
 var path = require("path");
 
+var publicDir = require('path').join(__dirname,'/public');
+app.use(express.static(publicDir));
+
 app.use(bodyParser.urlencoded({ extended: false }))
 // Body Parser Middleware
 app.use(bodyParser.json());
@@ -19,7 +22,7 @@ app.use(function (req, res, next) {
 });
 
 //Setting up server
- var server = app.listen(process.env.PORT || 3000, function () {
+ var server = app.listen(process.env.PORT, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
  });
